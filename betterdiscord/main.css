@@ -177,10 +177,10 @@
     --text-normal: #8E9297;
 }
 
-@import url("https://nyri4.github.io/event/christmas.css");
+/*@import url("https://nyri4.github.io/event/christmas.css");
 @import url("https://discord-custom-covers.github.io/usrbg/dist/usrbg.css");
 @import url("https://monstrousdev.github.io/themes/addons/user-tags.css");
-@import url("https://nyri4.github.io/donators/donators.css");
+@import url("https://nyri4.github.io/donators/donators.css");*/
 :root .buttons-cl5qTG {
   transition: opacity 150ms;
 }
@@ -2266,7 +2266,7 @@
 }
 :root .pointerEvents-2zdfdO[width="25"], :root .pointerEvents-2zdfdO[mask="url(#svg-mask-status-online-mobile)"] {
   rx: 5px;
-} */
+}
 :root .mask-1l8v16, :root .userInfo-2zN2z8 {
   overflow: visible;
 }
@@ -2301,7 +2301,7 @@
 :root .mask-1l8v16 > svg > mask > rect:nth-child(2), :root .mask-1l8v16 > svg > mask > circle, :root .mask-1l8v16 > svg > mask > polygon {
   display: none;
 }
-/* :root .channel-2QD9_O .pointerEvents-2zdfdO,
+:root .channel-2QD9_O .pointerEvents-2zdfdO,
 :root .members-1998pB .pointerEvents-2zdfdO,
 :root .avatarWrapper-2yR4wp[aria-expanded=false] .pointerEvents-2zdfdO,
 :root .peopleListItem-2nzedh .pointerEvents-2zdfdO,
@@ -2615,3 +2615,57 @@
 } */
 
 #sticker-picker-tab {display: none}
+
+
+
+/*
+	Make avatar bigger in calls
+*/
+.avatarWrapper-29j3CC {
+    width: 110px !important;
+    height: 110px !important;
+}
+
+
+
+/*
+	Embed tweaks
+*/
+:root{
+    --embed-border-radius: 8px;
+}
+.embed-IeVjo6 {
+    border-radius: var(--embed-border-radius);
+}
+.embed-IeVjo6 code{
+    background: var(--background-secondary);
+}
+:root{
+    --embed-line-width: 256px;
+}
+.embedWrapper-lXpS3L{
+}
+.embedFull-2tM8-- {
+
+    border-left: calc(4px + var(--embed-line-width)) solid var(--background-accent);
+    background: var(--background-secondary);
+}
+.grid-1nZz7S {
+    margin-left: calc( -1 * var(--embed-line-width));
+    z-index: 1;
+}
+.embedFull-2tM8--:after, .embedFull-2tM8--:before{
+    content: "";
+    height: 100%;
+    width: var(--embed-line-width);
+    position: absolute;
+    top: 0;
+    left: calc(-1 * var(--embed-line-width));
+}
+.embedFull-2tM8--:after{
+    background: linear-gradient(to right, transparent, var(--background-secondary));
+}
+.embedFull-2tM8--:before{
+    background: var(--background-secondary);
+    opacity: .8;
+}
