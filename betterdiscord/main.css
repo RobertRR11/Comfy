@@ -263,7 +263,6 @@
 :root .message-2CShn3.mentioned-Tre-dv:hover {
   background-color: var(--mention-color-hover) !important;
 }
-
 /* Revert custom channel and user mentions
 :root .wrapper-1ZcZW-:not([style]) {
   color: var(--brand-experiment);
@@ -1494,7 +1493,6 @@
 :root .keybind-13vtq8 {
   display: none;
 }*/
-
 :root .accountProfileCard-lbN7n- {
   background-color: var(--background-secondary);
 }
@@ -1522,8 +1520,7 @@
   border: none;
   border-radius: var(--avatar-radius);
   background-color: transparent;
-}
-*/
+} */
 :root .profileCustomizationSection-2OOT4p .baseLayout-8AMrwn .avatarUploaderInner-p38nm2 .avatarUploaderIcon-3-5PWB {
   display: none;
 }
@@ -1951,7 +1948,6 @@
   background: var(--background-secondary-alt);
   box-shadow: none;
 }
-
 /* Revert custom Windows buttons
 .winButton-3UMjdg:not(:last-child) > svg {
   display: none;
