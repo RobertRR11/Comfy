@@ -176,8 +176,6 @@
     --header-secondary: #B1B5B9;
     --text-normal: #8E9297;
 }
-
-/*@import url("https://nyri4.github.io/event/christmas.css");
 @import url("https://discord-custom-covers.github.io/usrbg/dist/usrbg.css");
 @import url("https://monstrousdev.github.io/themes/addons/user-tags.css");
 @import url("https://nyri4.github.io/donators/donators.css");*/
@@ -719,9 +717,6 @@
 }
 :root .mainContent-uDGa6R .arrow-2HswgU {
   display: none;
-}
-:root .typeThread-2Aqh6X .content-1gYQeQ {
-  padding-left: 34px;
 }
 :root .spine-29OFwR {
   z-index: 1;
@@ -2188,20 +2183,19 @@
   height: 200px;
   background: url("https://nyri4.github.io/Comfy/assets/bonfire.gif") center/80% no-repeat;
 }
-:root rect [mask="url(#svg-mask-status-online)"],
-:root rect [mask="url(#svg-mask-status-online-mobile)"] {
+:root rect[mask="url(#svg-mask-status-online)"], :root rect[mask="url(#svg-mask-status-online-mobile)"] {
   fill: var(--online);
 }
-:root rect [mask="url(#svg-mask-status-idle)"] {
+:root rect[mask="url(#svg-mask-status-idle)"] {
   fill: var(--iddle);
 }
-:root rect [mask="url(#svg-mask-status-dnd)"] {
+:root rect[mask="url(#svg-mask-status-dnd)"] {
   fill: var(--dnd);
 }
-:root rect [mask="url(#svg-mask-status-offline)"] {
+:root rect[mask="url(#svg-mask-status-offline)"] {
   fill: var(--offline);
 }
-:root rect [mask="url(#svg-mask-status-streaming)"] {
+:root rect[mask="url(#svg-mask-status-streaming)"] {
   fill: var(--streaming);
 }
 :root .contentWrapper-3oy4Xo {
