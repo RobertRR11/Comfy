@@ -3,7 +3,7 @@
 * @author Nyria#3863
 * @description Stay comfy while talking to your friends
 * @invite rtBQX5D3bD
-* @version 2.1
+* @version 2.2.1
 * @donate https://ko-fi.com/nyria
 */
 
@@ -596,7 +596,7 @@
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
-:root .listItem-3SmSlK.bd-unread::before,
+/* :root .listItem-3SmSlK.bd-unread::before,
 :root .listItem-3SmSlK[vz-unread]::before,
 :root .listItem-3SmSlK.unread::before,
 :root .wrapper-38slSD.bd-unread:not(.bd-expanded)::before,
@@ -611,8 +611,8 @@
   width: 12px;
   height: 12px;
   background: var(--unread-color);
-  /* border-radius: 50%;
-  animation: var(--disable-animations), 2s server-unread infinite;*/
+  border-radius: 50%;
+  animation: var(--disable-animations), 2s server-unread infinite;
 }
 @keyframes server-unread {
   0% {
@@ -641,7 +641,7 @@
 :root .wrapper-38slSD[vz-unread]:hover:not(.expanded) .pill-2RsI5Q,
 :root .wrapper-38slSD.unread:hover:not(.expanded) .pill-2RsI5Q {
   display: flex;
-}
+} */
 
 :root #guild-header-popout .item-1OdjEX {
   flex-direction: row-reverse;
@@ -2585,30 +2585,21 @@
 /*
 	Embed tweaks
 */
-:root{
-    --embed-border-radius: 8px;
-}
-.embed-IeVjo6 {
-    border-radius: var(--embed-border-radius);
-}
 .embed-IeVjo6 code{
     background: var(--background-secondary);
 }
 :root{
     --embed-line-width: 256px;
 }
-.embedWrapper-lXpS3L{
-}
-.embedFull-2tM8-- {
-
+.embedFull-1HGV2S {
     border-left: calc(4px + var(--embed-line-width)) solid var(--background-accent);
     background: var(--background-secondary);
 }
-.grid-1nZz7S {
+.grid-1aWVsE {
     margin-left: calc( -1 * var(--embed-line-width));
     z-index: 1;
 }
-.embedFull-2tM8--:after, .embedFull-2tM8--:before{
+.embedFull-1HGV2S:after, .embedFull-1HGV2S:before{
     content: "";
     height: 100%;
     width: var(--embed-line-width);
@@ -2616,10 +2607,10 @@
     top: 0;
     left: calc(-1 * var(--embed-line-width));
 }
-.embedFull-2tM8--:after{
+.embedFull-1HGV2S:after{
     background: linear-gradient(to right, transparent, var(--background-secondary));
 }
-.embedFull-2tM8--:before{
+.embedFull-1HGV2S:before{
     background: var(--background-secondary);
     opacity: .8;
 }
@@ -2629,33 +2620,33 @@
 	Before: https://cdn.discordapp.com/attachments/924401378875559986/928566505044590623/Screen_Shot_2022-01-06_at_7.31.43_pm.png
 	After: https://cdn.discordapp.com/attachments/924401378875559986/928566301117530122/Screen_Shot_2022-01-06_at_7.30.54_pm.png
 */
-.toast-1DEQGy {
-  background: #43b581 !important;
-  transform: translateY(10px);
-  padding: 6px 10px 6px 10px !important;
-  border-radius: 5px;
-  box-shadow: var(--elevation-medium), var(--elevation-stroke);
-  font-weight: 500;
-  color: var(--header-primary);
-  opacity: 1;
-  margin-top: 10px;
+.toast-q3Y4wI {
+    background: #43b581 !important;
+    transform: translateY(10px);
+    padding: 6px 10px 6px 10px !important;
+    border-radius: 5px;
+    box-shadow: var(--elevation-medium), var(--elevation-stroke);
+    font-weight: 500;
+    color: var(--header-primary);
+    opacity: 1;
+    margin-top: 10px;
 }
 
-.toast-1DEQGy .icon-q80NJC > path {
-  d: none !important;
+.toast-q3Y4wI .icon-2QUmmw > path {
+    d: none !important;
 }
 
-.toast-1DEQGy .icon-q80NJC {
-  height: 20px !important;
-  width: 20px !important;
-  margin-top: 0 !important;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptLTIgMTVsLTUtNSAxLjQxLTEuNDFMMTAgMTQuMTdsNy41OS03LjU5TDE5IDhsLTkgOXoiLz48L3N2Zz4=);
-  background-size: 20px 20px;
+.toast-q3Y4wI .icon-2QUmmw {
+    height: 20px !important;
+    width: 20px !important;
+    margin-top: 0 !important;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptLTIgMTVsLTUtNSAxLjQxLTEuNDFMMTAgMTQuMTdsNy41OS03LjU5TDE5IDhsLTkgOXoiLz48L3N2Zz4=);
+    background-size: 20px 20px;
 }
 
-.toast-1DEQGy .colorHeaderPrimary-26Jzh- {
-  font-size: 14px !important;
-  line-height: 20px !important;
+.toast-q3Y4wI .colorHeaderPrimary-jN_yGr {
+    font-size: 14px !important;
+    line-height: 20px !important;
 }
 
 
@@ -2857,4 +2848,56 @@
 */
 .connectedAccountNameInner-t24B11 .connectedAccountVerifiedIcon-3XCxT8 {
   display: none;
+}
+
+
+
+/*
+  Animated settings/deafen/mute buttons
+*/
+.button-12Fmur:hover .contents-3ca1mk {
+	animation: UserModalButtons 0.3s normal ease;
+}
+.container-YkUktl .noWrap-hBpHBz {
+	width: 100px;opacity: 1;
+}
+.button-12Fmur {
+	transition: 0.2s;
+}
+.button-12Fmur:hover {
+	padding-bottom: 0px;
+	transition: 0.2;
+}
+@keyframes UserModalButtons {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+/*
+  Remove hypesquad because why is this even a thing
+*/
+img[src$="9f00b18e292e10fc0ae84ff5332e8b0b.svg"],
+img[src$="ec8e92568a7c8f19a052ef42f862ff18.svg"],
+img[src$="efcc751513ec434ea4275ecda4f61136.svg"],
+.side-2ur1Qk .item-3XjbnG[aria-controls="discord-nitro-tab"] {
+	display: none
+}
+
+
+
+/*
+  No I won't buy nitro
+*/
+.channel-1Shao0[href="/store"],
+.side-2ur1Qk .item-3XjbnG[aria-controls="hypesquad-online-tab"] {
+	display: none
 }
