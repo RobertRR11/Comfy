@@ -4,7 +4,7 @@
 .buttons-3dF5Kd { transition: opacity 150ms;}
 
 // Avatar of the user
-.panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW[aria-expanded="false"] {
+/*.panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW[aria-expanded="false"] {
   position: fixed;
   bottom: 26.5px; left: 327.5px;
   z-index: 2; margin: 0;
@@ -17,13 +17,13 @@
   }
 
   & + .nameTag-sc-gpq { display: none;}
-}
+}*/
 
 // Hiding avatar
 .content-1SgpWY > :nth-child(2):not(.chat-2ZfjoI), .callContainer-BGIngG, .gatedContent-31-gID { z-index: 2;}
 
 // Chat bar
-.chat-2ZfjoI .form-3gdLxP {
+/*.chat-2ZfjoI .form-3gdLxP {
   padding-left: 66px;
 
   .channelTextArea-1FufC0 .scrollableContainer-15eg7h::after, .wrapper-2SplAX::after {
@@ -34,7 +34,7 @@
     background-color: var(--background-secondary);
     border-radius: calc(var(--avatar-radius) + 2px);
   }
-}
+}*/
 
 // Typing indicator
 .typing-2J1mQU { left: 66px; right: 26px;}
@@ -85,7 +85,7 @@
 }
 
 // Channel/User tag
-.wrapper-1ZcZW-:not([style]) {
+/*.wrapper-1ZcZW-:not([style]) {
   color: var(--brand-experiment);
   background: transparent;
 
@@ -97,7 +97,7 @@
     background-color: var(--brand-experiment);
     border-radius: inherit;
   }
-}
+}*/
 
 // Reaction
 .reaction-2A2y9y {

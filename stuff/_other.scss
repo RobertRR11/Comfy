@@ -1,6 +1,6 @@
 // -- 🚥 WINDOWS BUTTONS PART --
 
-.winButton-3UMjdg {
+/*.winButton-3UMjdg {
   &:not(:last-child) {
 
     & > svg { display: none;}
@@ -41,7 +41,7 @@
     &:hover { color: #43b582e3;}
     rect { height: 3px; rx: 2px;}
   }
-}
+}*/
 
 // -- 🟢 STATUS PICKER --
 .full-motion .animatorTop-3ltI52.didRender-2SiRlm {
@@ -259,7 +259,7 @@ rect {
 .root-g14mjS:not(.modal-3Crloo) { background: var(--background-secondary);}
 
 // Deleting Discord watermark
-.wordmark-2u86JB svg { display: var(--discord-logo);}
+//.wordmark-2u86JB svg { display: var(--discord-logo);}
 
 // Watch stream popout
 .body-2khErn { background: var(--background-tertiary);}
@@ -290,7 +290,7 @@ rect {
 }
 
 // -- Status masks --
-.pointerEvents-9SZWKj { 
+/*.pointerEvents-9SZWKj { 
   mask: none; pointer-events: none;
 
   &[width="8"]:not([mask="url(#svg-mask-status-online-mobile)"]),
@@ -406,7 +406,7 @@ div:not(.avatarWrapper-1B9FTW) .mask-1FEkla > svg > mask > rect:first-child { y:
 
 // Buttons
 .container-2nx-BQ, .input-2XRLou { border-radius: 5px;}
-.slider-32CRPX rect { rx: 5px;}
+.slider-32CRPX rect { rx: 5px;}*/
 
 // Volume bar
 .mini-2qY9iv { height: 25px;} 
@@ -462,7 +462,7 @@ div:not(.avatarWrapper-1B9FTW) .mask-1FEkla > svg > mask > rect:first-child { y:
 }
 
 // Revert some Discord internal changes
---brand-experiment: #7289DA;
+--brand-experiment: #5865f2;
 --brand-experiment-560: #5b70be;
 --font-display: var(--font-primary);
 

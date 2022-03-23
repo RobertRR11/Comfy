@@ -1,13 +1,13 @@
 :root {
     
 // Server list
-.guilds-2JjMmN .scroller-3X7KbA  {
+/*.guilds-2JjMmN .scroller-3X7KbA  {
   contain: none !important;
   padding-bottom: 170px;
-}
+}*/
 
 // Folder
-.expandedFolderBackground-1kSAf6 { border-radius: var(--server-radius);}
+//.expandedFolderBackground-1kSAf6 { border-radius: var(--server-radius);}
 .folder-241Joy { background-color: transparent;}
 
 // Discover
@@ -77,7 +77,7 @@
 }
 
 // User buttons
-.panels-3wFtMD > .container-YkUktl {
+/*.panels-3wFtMD > .container-YkUktl {
   height: 0;
 
     & > .flex-2S1XBF {
@@ -92,7 +92,7 @@
       margin: var(--user-buttons-spacing) auto 0 auto;
     }
   }
-}
+}*/
 
 // Notifications settings
 .inner-1ilYF7 > .modal-2RrUKJ > .header-1zd7se,
@@ -133,7 +133,7 @@
 
 // Mention pill
 .lowerBadge-3WTshO {
-  top: 0; left: 0;
+  //top: 0; left: 0;
 
   .numberBadge-37OJ3S {
     background-color: var(--mention-color) !important;
@@ -148,7 +148,7 @@
 }
 
 // Unread pill
-.listItem-3SmSlK.bd-unread::before,
+/*.listItem-3SmSlK.bd-unread::before,
 .listItem-3SmSlK[vz-unread]::before,
 .listItem-3SmSlK.unread::before,
 .wrapper-38slSD.bd-unread:not(.bd-expanded)::before,
@@ -187,6 +187,6 @@
 .wrapper-38slSD[vz-unread]:hover:not(.expanded) .pill-2RsI5Q, 
 .wrapper-38slSD.unread:hover:not(.expanded) .pill-2RsI5Q { 
   display: flex;
-}
+}*/
 
 }

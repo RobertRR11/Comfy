@@ -3,7 +3,7 @@
 // -- 👤 USER SETTINGS --
 
 // Wide settings
-.contentRegion-3HkfJJ { flex: 1 1 100%;}
+/*.contentRegion-3HkfJJ { flex: 1 1 100%;}
 .contentColumn-1C7as6, .customColumn-2n-oKU,
 .sidebarScrollable-2mW9Ls + .content-2ssVKB,
 .customScroller-m1-jZn>div { max-width: 95%;}
@@ -20,7 +20,7 @@
 }
 
 .closeButton-PCZcma { border-radius: 5px;}
-.keybind-13vtq8 { display: none;}
+.keybind-13vtq8 { display: none;}*/
 
 // My account
 .accountProfileCard-lbN7n- {
@@ -31,13 +31,13 @@
     border-width: 9px 0;
     background-color: transparent;
 
-    .pointerEvents-9SZWKj { 
+    /*.pointerEvents-9SZWKj { 
       x: 66px; y: 66px; 
       width: 20px; height: 20px;
       rx: calc(var(--status-radius) + 1px) !important;
       stroke: var(--background-secondary);
       stroke-width: 4px;
-    }
+    }*/
   }
 
   .background-3d_SjE { margin-right: 0;}
@@ -49,9 +49,9 @@
 
   // Avatar
   .avatarUploaderInner-p38nm2 { 
-    border: none;
+    /*border: none;
     border-radius: var(--avatar-radius);
-    background-color: transparent;
+    background-color: transparent;*/
 
     .avatarUploaderIcon-3-5PWB { display: none;}
   }
@@ -77,7 +77,7 @@
     & > div[aria-hidden="true"]:last-child {
       position: relative;
       margin: 37px 16px 0 16px; padding: 16px;
-      background-color: #7289da;
+      background-color: #5865f2;
       border-radius: 0 0 5px 5px;
 
       .colorStandard-21JIj7, h3 { color: white;}
@@ -86,7 +86,7 @@
         content: ""; position: absolute;
         height: 21px; z-index: 2;
         width: 268px; top: -21px; left: 0;
-        background: #7289da;
+        background: #5865f2;
         background: var(--playing);
         -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
         animation: animate 6s linear infinite;
