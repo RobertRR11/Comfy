@@ -287,7 +287,23 @@
   .listItem-3SmSlK.unread::before,
   .wrapper-38slSD.bd-unread:not(.bd-expanded)::before,
   .wrapper-38slSD[vz-unread]:not([vz-expanded])::before,
-  .wrapper-38slSD.unread:not(.expanded)::before {
+  .wrapper-38slSD.unread:not(.expanded)::before 
+  {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0; left: 12px; z-index: 2;
+    width: 12px; height: 12px;
+    background: var(--unread-color);
+    border-radius: 50%;
+  }
+
+  .listItem-3SmSlK.bd-unread::after,
+  .listItem-3SmSlK[vz-unread]::after,
+  .listItem-3SmSlK.unread::after,
+  .wrapper-38slSD.bd-unread:not(.bd-expanded)::after,
+  .wrapper-38slSD[vz-unread]:not([vz-expanded])::after,
+  .wrapper-38slSD.unread:not(.expanded)::after {
     content: "";
     position: absolute;
     display: block;
@@ -295,19 +311,16 @@
     width: 12px; height: 12px;
     background: var(--unread-color);
     border-radius: 50%;
-    animation: var(--disable-animations), 2s server-unread infinite;
-
-    @keyframes server-unread {
-      0% { box-shadow: 0 0 0 0 var(--unread-color);}
-      70% { box-shadow: 0 0 0 8px rgba(0, 0, 0, 0);}
-      100% { box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);}
-    }
+    animation: var(--disable-animations), 2s pulse infinite;
+    will-change: transform;
   }
 
   .listItem-3SmSlK.bd-unread .pill-2RsI5Q, .listItem-3SmSlK[vz-unread] .pill-2RsI5Q, .listItem-3SmSlK.unread .pill-2RsI5Q,
   .wrapper-38slSD.bd-unread:not(.expanded) .pill-2RsI5Q, .wrapper-38slSD[vz-unread]:not(.expanded) .pill-2RsI5Q, .wrapper-38slSD.unread:not(.expanded) .pill-2RsI5Q,
   .listItem-3SmSlK.unread.mentioned::before, .listItem-3SmSlK[vz-unread][vz-mentioned]::before, .listItem-3SmSlK.bd-unread.bd-badge::before,
-  .wrapper-38slSD.unread.mentioned::before, .wrapper-38slSD[vz-unread][vz-mentioned]::before, .wrapper-38slSD.bd-unread.bd-badge::before {
+  .wrapper-38slSD.unread.mentioned::before, .wrapper-38slSD[vz-unread][vz-mentioned]::before, .wrapper-38slSD.bd-unread.bd-badge::before,
+  .listItem-3SmSlK.unread.mentioned::after, .listItem-3SmSlK[vz-unread][vz-mentioned]::after, .listItem-3SmSlK.bd-unread.bd-badge::after,
+  .wrapper-38slSD.unread.mentioned::after, .wrapper-38slSD[vz-unread][vz-mentioned]::after, .wrapper-38slSD.bd-unread.bd-badge::after {
     display: none;
   }
 
@@ -441,62 +454,6 @@
   z-index: -1;
   animation: var(--disable-animations), 2s pulse infinite;
   will-change: transform;
-}
-
-:root .listItem-3SmSlK.bd-unread::before,
-:root .listItem-3SmSlK[vz-unread]::before,
-:root .listItem-3SmSlK.unread::before,
-:root .wrapper-38slSD.bd-unread:not(.bd-expanded)::before,
-:root .wrapper-38slSD[vz-unread]:not([vz-expanded])::before,
-:root .wrapper-38slSD.unread:not(.expanded)::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 12px;
-  z-index: 2;
-  width: 12px;
-  height: 12px;
-  background: var(--unread-color);
-  border-radius: 50%;
-}
-:root .listItem-3SmSlK.bd-unread::after,
-:root .listItem-3SmSlK[vz-unread]::after,
-:root .listItem-3SmSlK.unread::after,
-:root .wrapper-38slSD.bd-unread:not(.bd-expanded)::after,
-:root .wrapper-38slSD[vz-unread]:not([vz-expanded])::after,
-:root .wrapper-38slSD.unread:not(.expanded)::after {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 12px;
-  z-index: 1;
-  width: 12px;
-  height: 12px;
-  background: var(--unread-color);
-  border-radius: 50%;
-  animation: var(--disable-animations), 2s pulse infinite;
-  will-change: transform;
-}
-:root .listItem-3SmSlK.bd-unread .pill-2RsI5Q, :root .listItem-3SmSlK[vz-unread] .pill-2RsI5Q, :root .listItem-3SmSlK.unread .pill-2RsI5Q,
-:root .wrapper-38slSD.bd-unread:not(.expanded) .pill-2RsI5Q, :root .wrapper-38slSD[vz-unread]:not(.expanded) .pill-2RsI5Q, :root .wrapper-38slSD.unread:not(.expanded) .pill-2RsI5Q,
-:root .listItem-3SmSlK.unread.mentioned::before, :root .listItem-3SmSlK[vz-unread][vz-mentioned]::before, :root .listItem-3SmSlK.bd-unread.bd-badge::before,
-:root .wrapper-38slSD.unread.mentioned::before, :root .wrapper-38slSD[vz-unread][vz-mentioned]::before, :root .wrapper-38slSD.bd-unread.bd-badge::before,
-:root .listItem-3SmSlK.unread.mentioned::after, :root .listItem-3SmSlK[vz-unread][vz-mentioned]::after, :root .listItem-3SmSlK.bd-unread.bd-badge::after,
-:root .wrapper-38slSD.unread.mentioned::after, :root .wrapper-38slSD[vz-unread][vz-mentioned]::after, :root .wrapper-38slSD.bd-unread.bd-badge::after {
-  display: none;
-}
-:root .listItem-3SmSlK.bd-unread[bd-selected] .pill-2RsI5Q, :root .listItem-3SmSlK.unread.selected .pill-2RsI5Q,
-:root .listItem-3SmSlK[vz-unread][vz-selected] .pill-2RsI5Q, :root .listItem-3SmSlK.unread.selected .pill-2RsI5Q,
-:root .wrapper-38slSD.bd-unread[bd-selected] .expandedFolderBackground-1kSAf6 + .listItem-3SmSlK .pill-2RsI5Q,
-:root .wrapper-38slSD[vz-unread][vz-selected]:not(.expanded) .pill-2RsI5Q, :root .wrapper-38slSD.unread.selected:not(.expanded) .pill-2RsI5Q,
-:root .listItem-3SmSlK.bd-unread:hover .pill-2RsI5Q,
-:root .listItem-3SmSlK[vz-unread]:hover .pill-2RsI5Q, :root .listItem-3SmSlK.unread:hover .pill-2RsI5Q,
-:root .wrapper-38slSD.bd-unread:hover .expandedFolderBackground-1kSAf6 + .listItem-3SmSlK .pill-2RsI5Q,
-:root .wrapper-38slSD[vz-unread]:hover:not(.expanded) .pill-2RsI5Q,
-:root .wrapper-38slSD.unread:hover:not(.expanded) .pill-2RsI5Q {
-  display: flex;
 }
 
 @keyframes pulse {
