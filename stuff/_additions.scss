@@ -122,14 +122,23 @@
 img[src$="9f00b18e292e10fc0ae84ff5332e8b0b.svg"],
 img[src$="ec8e92568a7c8f19a052ef42f862ff18.svg"],
 img[src$="efcc751513ec434ea4275ecda4f61136.svg"],
-.side-2ur1Qk .item-3XjbnG[aria-controls="discord-nitro-tab"] {
-	display: none
+.side-2ur1Qk .item-3XjbnG[aria-controls="hypesquad-online-tab"] {
+	display: none;
 }
 
 /*
   No I won't buy nitro
 */
-.channel-1Shao0[href="/store"],
-.side-2ur1Qk .item-3XjbnG[aria-controls="hypesquad-online-tab"] {
-	display: none
+.privateChannels-oVe7HL [href="/store"] + svg,
+.side-2ur1Qk .item-3XjbnG[aria-controls="discord-nitro-tab"],
+.premiumLabel-3HPvdB svg,
+.premiumLabel-3HPvdB .badgeIconSettingsMenu-39c26C {
+    display: none;
+}
+
+/*
+  Remove the "Public" badge under the server title because who needs this
+*/
+.communityInfoVisible-3zc5_s .communityInfoContainer-1dMVpU {
+	display: none;
 }
