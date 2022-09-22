@@ -172,3 +172,10 @@ img[src$="efcc751513ec434ea4275ecda4f61136.svg"],
   background: inherit;
   opacity: var(--transparency);
 }
+
+/*
+  Themes the background of forums and server homes
+*/
+.container-3wLKDe, .background-fkKrXt {
+  background-color: var(--background-secondary-alt) !important;
+}
